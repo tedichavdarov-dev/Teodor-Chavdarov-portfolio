@@ -135,7 +135,14 @@ function RunnerPreview() {
       }
     }
 
+    const handlePointerJump = (event) => {
+      event.preventDefault()
+      jump()
+    }
+
     window.addEventListener('keydown', handleKeyDown)
+    canvas.addEventListener('pointerdown', handlePointerJump)
+    canvas.addEventListener('touchstart', handlePointerJump, { passive: false })
 
     const hasCollision = (a, b) =>
       a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y
@@ -204,6 +211,8 @@ function RunnerPreview() {
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
+      canvas.removeEventListener('pointerdown', handlePointerJump)
+      canvas.removeEventListener('touchstart', handlePointerJump)
       cancelAnimationFrame(animationFrameId)
     }
   }, [])
@@ -214,7 +223,15 @@ function RunnerPreview() {
         <p>JS Mini Demo</p>
         <span>Score: {score}</span>
       </div>
-      <canvas ref={canvasRef} width={520} height={120} className="contact-game-canvas" />
+      <canvas
+        ref={canvasRef}
+        width={520}
+        height={120}
+        className="contact-game-canvas"
+        role="button"
+        tabIndex={0}
+        aria-label="Toca para saltar en el minijuego"
+      />
       <p className="contact-game-help">
         {isGameOver ? 'Game Over - Enter para reiniciar' : 'Space / ArrowUp para saltar'}
       </p>

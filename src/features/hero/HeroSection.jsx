@@ -103,24 +103,28 @@ function HeroSection() {
               <span className="token-string">'React'</span>
               <span className="token-punctuation">,</span>{' '}
               <span className="token-string">'Node.js'</span>
+              <span className="token-punctuation">,</span>
+            </p>
+            <p>
+              <span className="code-line">06</span>
               <span className="token-punctuation">,</span>{' '}
               <span className="token-string">'APIs'</span>
               <span className="token-punctuation">]</span>
               <span className="token-punctuation">,</span>
             </p>
             <p>
-              <span className="code-line">06</span>
+              <span className="code-line">07</span>
               <span className="token-property">availableForHire</span>
               <span className="token-punctuation">:</span>{' '}
               <span className="token-boolean">true</span>
             </p>
             <p>
-              <span className="code-line">07</span>
+              <span className="code-line">08</span>
               <span className="token-punctuation">{'}'}</span>
               <span className="token-punctuation">;</span>
             </p>
             <p>
-              <span className="code-line">08</span>
+              <span className="code-line">09</span>
               <span className="token-variable">developer</span>
               <span className="token-punctuation">.</span>
               <span className="token-method">buildImpact</span>

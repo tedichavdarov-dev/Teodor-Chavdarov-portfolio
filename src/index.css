@@ -1334,10 +1334,10 @@ strong {
   }
 
   .projects-sticky-stage {
-    position: relative;
-    top: 0;
-    min-height: auto;
-    padding-top: 4.8rem;
+    position: sticky;
+    top: calc(var(--header-offset) + 14px);
+    min-height: min(78vh, 680px);
+    padding-top: 0;
   }
 
   .project-top-meta {
@@ -1379,15 +1379,15 @@ strong {
   }
 
   .projects-scroll-track {
-    margin-top: 0.4rem;
-    padding-top: 0;
+    margin-top: -70vh;
+    padding-top: 70vh;
   }
 
   .project-scroll-step {
-    height: 22vh;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 0.1rem;
+    height: 76vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
   }
 
   .about-pro-grid {
