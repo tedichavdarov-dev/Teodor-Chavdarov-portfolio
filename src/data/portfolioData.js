@@ -71,8 +71,8 @@ export const featuredProjects = [
     title: 'Astra Automations',
     developmentTime: 'Proyecto cliente',
     description:
-      'Landing page para cliente con una demo de automatizacion conectada con Make en los flujos de newsletter y formulario de contacto.',
-    stack: ['React', 'Vite', 'JavaScript', 'Make', 'Email Automation'],
+      'Landing page para cliente con una demo de automatizacion conectada con n8n en los flujos de newsletter y formulario de contacto, incluyendo integración con Calendly.',
+    stack: ['React', 'Vite', 'JavaScript', 'n8n', 'Calendly', 'Email Automation'],
     image:
       'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fastrautomations.vercel.app%2F?w=1200',
     url: 'https://astrautomations.vercel.app/',

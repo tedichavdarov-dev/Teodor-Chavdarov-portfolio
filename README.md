@@ -33,10 +33,10 @@ Wikipedia social de autores donde compiten por el mejor articulo para permanecer
 
 ### 2) Astra Automations
 
-Landing page para cliente con demo de automatizacion conectada con Make en newsletter y formulario de contacto.
+Landing page para cliente con demo de automatizacion conectada con n8n en newsletter y formulario de contacto, con integración de Calendly.
 
 **Stack / etiquetas:**
-`React` `Vite` `JavaScript` `Make` `Email Automation`
+`React` `Vite` `JavaScript` `n8n` `Calendly` `Email Automation`
 
 ## Tecnologias del portfolio
 
