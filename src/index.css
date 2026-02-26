@@ -1360,9 +1360,14 @@ strong {
     max-width: 100%;
   }
 
+  .project-title-left {
+    margin-bottom: 1.15rem;
+  }
+
   .project-static-hint {
     position: static;
     margin-top: 0.75rem;
+    padding-bottom: 2.8rem;
   }
 
   .project-image-center {
@@ -1388,6 +1393,18 @@ strong {
     justify-content: center;
     align-items: center;
     padding-left: 0;
+  }
+
+  .project-stack-tags {
+    position: absolute;
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    max-width: none;
+    justify-content: flex-start;
+    z-index: 3;
+    background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 0.92) 40%);
+    padding-top: 1rem;
   }
 
   .about-pro-grid {
