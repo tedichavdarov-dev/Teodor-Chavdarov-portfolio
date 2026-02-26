@@ -637,6 +637,13 @@ strong {
   color: #f0f0f0;
 }
 
+.project-stack-tag-real {
+  border-color: #2d67c8;
+  background: linear-gradient(180deg, #2b78ff 0%, #1d57b7 100%);
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .project-title-left {
   position: absolute;
   left: 1rem;

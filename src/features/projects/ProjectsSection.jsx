@@ -108,7 +108,12 @@ function ProjectsSection() {
 
           <div className="project-stack-tags">
             {activeProject.stack.map((tech) => (
-              <span key={`${activeProject.id}-${tech}`} className="project-stack-tag">
+              <span
+                key={`${activeProject.id}-${tech}`}
+                className={`project-stack-tag ${
+                  tech === 'Web real de Astra' ? 'project-stack-tag-real' : ''
+                }`}
+              >
                 {tech}
               </span>
             ))}

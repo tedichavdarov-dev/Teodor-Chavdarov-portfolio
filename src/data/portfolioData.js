@@ -72,7 +72,15 @@ export const featuredProjects = [
     developmentTime: 'Proyecto cliente',
     description:
       'Landing page para cliente con una demo de automatizacion conectada con n8n en los flujos de newsletter y formulario de contacto, incluyendo integración con Calendly.',
-    stack: ['React', 'Vite', 'JavaScript', 'n8n', 'Calendly', 'Email Automation'],
+    stack: [
+      'Web real de Astra',
+      'React',
+      'Vite',
+      'TypeScript',
+      'n8n',
+      'Calendly',
+      'Email Automation',
+    ],
     image:
       'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fastrautomations.vercel.app%2F?w=1200',
     url: 'https://astrautomations.vercel.app/',
@@ -106,7 +114,6 @@ export const techCategories = [
     technologies: [
       'Node.js',
       'Express',
-      'Express.js (Básico)',
       'RESTful APIs',
       'JWT Authentication',
       'Stripe Integration',
@@ -186,3 +193,5 @@ export const experience = [
       'Desarrollé soluciones internas para optimizar operaciones en el sector de construcción y reformas. Implementé automatizaciones para reducir trabajo manual y mejorar la toma de decisiones. Creé herramientas de cálculo ROI y sistemas inteligentes de búsqueda de inmuebles integrando APIs externas y filtros basados en IA para detectar oportunidades viables de suelo y reforma.',
   },
 ]
+
+
