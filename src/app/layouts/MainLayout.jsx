@@ -1,31 +1,9 @@
-import { Suspense, lazy, useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Header from '../../components/layout/Header'
 import Footer from '../../components/layout/Footer'
-
-const StarBackground = lazy(() => import('../../components/common/StarBackground'))
+import StarBackground from '../../components/common/StarBackground'
 
 function MainLayout({ children }) {
-  const [showStarBackground, setShowStarBackground] = useState(false)
-
-  useEffect(() => {
-    const updateStarBackgroundVisibility = () => {
-      const isSmallScreen = window.matchMedia('(max-width: 760px)').matches
-      const prefersReducedMotion = window.matchMedia(
-        '(prefers-reduced-motion: reduce)',
-      ).matches
-      const saveDataEnabled = navigator.connection?.saveData === true
-
-      setShowStarBackground(!isSmallScreen && !prefersReducedMotion && !saveDataEnabled)
-    }
-
-    updateStarBackgroundVisibility()
-    window.addEventListener('resize', updateStarBackgroundVisibility)
-
-    return () => {
-      window.removeEventListener('resize', updateStarBackgroundVisibility)
-    }
-  }, [])
-
   useEffect(() => {
     const sections = document.querySelectorAll('.section')
     if (!sections.length) return undefined
@@ -49,11 +27,7 @@ function MainLayout({ children }) {
 
   return (
     <div className="app-shell">
-      {showStarBackground && (
-        <Suspense fallback={null}>
-          <StarBackground />
-        </Suspense>
-      )}
+      <StarBackground />
       <Header />
       <main>{children}</main>
       <Footer />
