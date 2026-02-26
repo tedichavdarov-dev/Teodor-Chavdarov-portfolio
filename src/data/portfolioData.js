@@ -105,6 +105,7 @@ export const techCategories = [
     category: 'Backend & APIs',
     technologies: [
       'Node.js',
+      'Express',
       'Express.js (Básico)',
       'RESTful APIs',
       'JWT Authentication',
@@ -126,7 +127,7 @@ export const techCategories = [
   },
   {
     category: 'DevOps & Tools',
-    technologies: ['CI/CD', 'Git', 'Docker (Básico)'],
+    technologies: ['CI/CD', 'Git', 'Docker (Básico)', 'Render'],
   },
 ]
 
