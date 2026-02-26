@@ -586,6 +586,9 @@ strong {
 }
 
 .project-stack-tags {
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -1341,17 +1344,12 @@ strong {
   }
 
   .project-top-meta {
-    position: absolute;
-    left: 0.8rem;
-    right: 0.8rem;
-    top: 0.7rem;
-    flex-direction: column;
-    gap: 0.45rem;
-  }
-
-  .project-stack-tags {
-    justify-content: flex-start;
-    max-width: 100%;
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    display: block;
+    margin-bottom: 0.5rem;
   }
 
   .project-title-left,
@@ -1367,7 +1365,7 @@ strong {
   .project-static-hint {
     position: static;
     margin-top: 0.75rem;
-    padding-bottom: 2.8rem;
+    padding-bottom: 0;
   }
 
   .project-image-center {
@@ -1396,15 +1394,15 @@ strong {
   }
 
   .project-stack-tags {
-    position: absolute;
-    left: 0.8rem;
-    right: 0.8rem;
-    bottom: 0.8rem;
+    position: static;
+    top: auto;
+    right: auto;
     max-width: none;
     justify-content: flex-start;
-    z-index: 3;
-    background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 0.92) 40%);
-    padding-top: 1rem;
+    margin-top: 0.7rem;
+    z-index: auto;
+    background: none;
+    padding-top: 0;
   }
 
   .about-pro-grid {

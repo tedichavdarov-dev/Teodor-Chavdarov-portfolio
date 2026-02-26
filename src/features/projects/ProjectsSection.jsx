@@ -67,13 +67,6 @@ function ProjectsSection() {
             <p className="project-dev-time">
               <span>Tiempo de desarrollo</span> {activeProject.developmentTime}
             </p>
-            <div className="project-stack-tags">
-              {activeProject.stack.map((tech) => (
-                <span key={`${activeProject.id}-${tech}`} className="project-stack-tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
           </div>
 
           <h3 className="project-title-left">{activeProject.title}</h3>
@@ -110,6 +103,14 @@ function ProjectsSection() {
           <p className="project-static-hint">
             Haz scroll para cambiar de proyecto sin mover el escenario.
           </p>
+
+          <div className="project-stack-tags">
+            {activeProject.stack.map((tech) => (
+              <span key={`${activeProject.id}-${tech}`} className="project-stack-tag">
+                {tech}
+              </span>
+            ))}
+          </div>
         </article>
 
         <div className="projects-scroll-track">
