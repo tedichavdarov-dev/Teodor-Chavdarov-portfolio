@@ -103,6 +103,7 @@ function RunnerPreview() {
     let lastTime = performance.now()
     let spawnTimer = 0.9
     let elapsed = 0
+    let lastScoreUpdate = 0
 
     const reset = () => {
       player.y = groundY - player.h
@@ -164,7 +165,11 @@ function RunnerPreview() {
 
       if (!gameOver) {
         elapsed += dt
-        setScore(Math.floor(elapsed * 10))
+        lastScoreUpdate += dt
+        if (lastScoreUpdate >= 0.12) {
+          lastScoreUpdate = 0
+          setScore(Math.floor(elapsed * 10))
+        }
 
         spawnTimer -= dt
         if (spawnTimer <= 0) {

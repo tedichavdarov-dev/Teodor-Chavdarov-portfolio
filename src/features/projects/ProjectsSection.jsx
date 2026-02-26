@@ -84,6 +84,8 @@ function ProjectsSection() {
                   src={activeProject.image}
                   alt={activeProject.title}
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   onError={(event) => {
                     event.currentTarget.style.display = 'none'
                   }}

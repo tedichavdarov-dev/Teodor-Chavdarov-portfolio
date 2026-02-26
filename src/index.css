@@ -28,6 +28,38 @@ body {
   overflow-x: hidden;
 }
 
+.app-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0) 38%),
+    #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.app-splash-hidden {
+  opacity: 0;
+}
+
+.app-splash-mark {
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+  border: 1px solid #2d2d2d;
+  background: #0f0f0f;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
 a {
   color: inherit;
 }

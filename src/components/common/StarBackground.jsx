@@ -1,12 +1,12 @@
 import { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { PointMaterial, Points, Preload } from '@react-three/drei'
+import { PointMaterial, Points } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 
 const StarField = () => {
   const ref = useRef(null)
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000 * 3), { radius: 1.25 }),
+    random.inSphere(new Float32Array(3200 * 3), { radius: 1.25 }),
   )
 
   useFrame((_, delta) => {
@@ -33,11 +33,10 @@ const StarField = () => {
 function StarBackground() {
   return (
     <div className="star-background" aria-hidden="true">
-      <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 2]} gl={{ alpha: true }}>
+      <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 1.5]} gl={{ alpha: true }}>
         <Suspense fallback={null}>
           <StarField />
         </Suspense>
-        <Preload all />
       </Canvas>
     </div>
   )
