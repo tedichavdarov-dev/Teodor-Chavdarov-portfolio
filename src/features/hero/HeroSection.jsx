@@ -114,9 +114,9 @@ function HeroSection() {
             </p>
             <p>
               <span className="code-line">07</span>
-              <span className="token-string">'Docker'</span>
+              <span className="token-string">'Next.js'</span>
               <span className="token-punctuation">,</span>{' '}
-              <span className="token-string">'Stripe'</span>
+              <span className="token-string">'Express'</span>
               <span className="token-punctuation">]</span>
               <span className="token-punctuation">,</span>
             </p>
