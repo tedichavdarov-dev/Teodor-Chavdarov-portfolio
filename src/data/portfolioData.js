@@ -47,6 +47,23 @@ export const projects = [
 
 export const featuredProjects = [
   {
+    id: 'featured-trade-void',
+    title: 'Trade Void',
+    developmentTime: 'Proyecto personal',
+    description:
+      'Plataforma de trading journal para llevar el control de tus operaciones. Incluye dashboard global, journal de trades, calendario mensual, registro de estrategias con analisis de rendimiento, backtesting y calculadora, todo integrado con widgets de TradingView.',
+    stack: [
+      'Next.js',
+      'React',
+      'Supabase',
+      'TradingView Widgets',
+      'Tailwind CSS',
+    ],
+    image:
+      'https://s.wordpress.com/mshots/v1/https%3A%2F%2Ftrade-void.vercel.app%2F?w=1200',
+    url: 'https://trade-void.vercel.app/',
+  },
+  {
     id: 'featured-paradoxical',
     title: 'Paradoxical',
     developmentTime: 'Proyecto real',
