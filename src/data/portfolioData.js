@@ -5,7 +5,7 @@ export const profile = {
   focusAreas: [
     'Full-Stack Developer',
     'Consultor Tecnológico',
-    'Automatización con IA',
+    'End-to-End',
   ],
   summary:
     'Fundador de Innovathera Technology (Madrid), consultora tecnológica que diagnostica ineficiencias operativas en PYMEs y las resuelve con desarrollo a medida. Sectores principales: hostelería y construcción.',
