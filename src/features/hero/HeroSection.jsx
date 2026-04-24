@@ -92,7 +92,7 @@ function HeroSection() {
               <span className="code-line">04</span>
               <span className="token-property">focus</span>
               <span className="token-punctuation">:</span>{' '}
-              <span className="token-string">'Full-Stack & SaaS'</span>
+              <span className="token-string">'Full-Stack & Consulting'</span>
               <span className="token-punctuation">,</span>
             </p>
             <p>

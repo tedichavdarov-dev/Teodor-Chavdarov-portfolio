@@ -1,21 +1,21 @@
 export const profile = {
   name: 'Teodor Chavdarov',
-  role: 'Software Developer',
+  role: 'Desarrollador Full-Stack & Consultor Tecnológico',
   greeting: 'Hi there! this is',
   focusAreas: [
-    'Software Developer',
     'Full-Stack Developer',
-    'SaaS Product Builder',
+    'Consultor Tecnológico',
+    'Automatización con IA',
   ],
   summary:
-    'Desarrollador de software enfocado en crear productos web robustos, escalables y listos para negocio. Especializado en arquitectura full-stack, APIs e integraciones reales para producto.',
+    'Fundador de Innovathera Technology (Madrid), consultora tecnológica que diagnostica ineficiencias operativas en PYMEs y las resuelve con desarrollo a medida. Sectores principales: hostelería y construcción.',
   summarySecondary:
-    'Combino visión técnica y foco en resultados para entregar software mantenible, rápido y orientado a impacto en negocio.',
+    'Enfoque asesor-implementador: primero entiendo cómo trabaja el negocio, después propongo, después construyo. El objetivo no es entregar código, es mejorar un proceso medible.',
   aboutStory: [
-    'Nací y crecí en Madrid, y he sentido pasión por la tecnología y la programación desde muy joven. Mi primer proyecto fue una web sencilla donde mis amigos podían solicitar una invitación para mi cumpleaños; una idea pequeña que marcó el inicio de mi compromiso con el software.',
-    'Desde entonces he mantenido una formación continua autodidacta, aprendiendo mediante documentación técnica, libros y experimentación práctica. Esa curiosidad me llevó a desarrollar productos SaaS y a construir soluciones para empresas con necesidades reales de producción.',
-    'Me especializo en automatización de procesos, integración de APIs y desarrollo full-stack orientado a escalabilidad. Busco siempre equilibrio entre calidad técnica y utilidad de negocio para entregar soluciones mantenibles y efectivas.',
-    'Disfruto colaborar con otros profesionales, participar en meetups, talleres y eventos de tecnología, especialmente en innovación e inteligencia artificial. Me motivan los entornos exigentes, con aprendizaje continuo, responsabilidad y foco en resultados.',
+    'Nací y crecí en Madrid, y he sentido pasión por la tecnología desde muy joven. Mi primer proyecto fue una web sencilla donde mis amigos podían solicitar invitación para mi cumpleaños; una idea pequeña que marcó el inicio de mi compromiso con el software.',
+    'Mi recorrido profesional empezó fuera del código: más de un año como asesor financiero en OVB Allfinanz, donde aprendí consultoría de alto valor — analizar al cliente, construir propuestas personalizadas y diseñar estrategias patrimoniales a medio-largo plazo. Esa base marcó mi forma de entender el negocio antes de entender la técnica.',
+    'Después pasé al desarrollo en Galaxy Construcciones, implementando soluciones internas para optimizar operaciones reales. Esa experiencia me llevó a fundar Innovathera Technology (Madrid), mi consultora actual: diagnosticamos ineficiencias operativas en PYMEs y las resolvemos con software a medida, bajo estándares ISO 9001, ISO 27001 y OWASP Top 10.',
+    'En septiembre de 2026 comienzo el Máster en Ciberseguridad en U-Tad, profundizando en seguridad defensiva para aplicarlo a nuestros propios desarrollos y a los de nuestros clientes. Me motivan los entornos exigentes, con aprendizaje continuo, responsabilidad y foco en resultados medibles.',
   ],
   resumeUrl: '/resume/CV-Teodor-Chavdarov-Karadazhov-2026-DesarrolladorSoftware.pdf',
   location: 'Collado Villalba, Madrid, Spain',
@@ -28,19 +28,19 @@ export const profile = {
 
 export const projects = [
   {
-    id: 'project-saas-automation',
-    title: 'SaaS de Automatización de Procesos',
+    id: 'project-automation',
+    title: 'Automatización de Procesos Empresariales',
     description:
-      'Desarrollo de soluciones SaaS enfocadas en automatizar operaciones para clientes y reducir tareas manuales.',
-    stack: ['JavaScript', 'Node.js', 'React', 'PostgreSQL'],
+      'Desarrollo de soluciones a medida enfocadas en automatizar operaciones internas de clientes y reducir trabajo manual, integrando IA para tareas repetitivas.',
+    stack: ['React', 'Node.js', 'Supabase', 'Claude API'],
     link: '#',
   },
   {
     id: 'project-metrics-panels',
     title: 'Paneles de Métricas y Gestión de Datos',
     description:
-      'Diseño e implementación de paneles de métricas, sistemas de gestión de datos y landings para Astra Automations y otros clientes.',
-    stack: ['React', 'Vite', 'Tailwind CSS', 'Express.js', 'MongoDB'],
+      'Diseño e implementación de paneles de métricas, sistemas de gestión de datos y landings para Astra Solutions y otros clientes.',
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
     link: '#',
   },
 ]
@@ -105,12 +105,12 @@ export const featuredProjects = [
 ]
 
 export const highlights = [
-  'Lanzamiento de productos SaaS en produccion, desde MVP hasta version estable para clientes reales',
-  'Trabajo colaborativo con Git',
-  'Automatizaciones mediante IA',
-  'Desarrollo End-to-End completo: idea, arquitectura, backend, frontend, integraciones, testing y despliegue',
-  'Escalado de funcionalidades SaaS con enfoque en negocio, mantenibilidad y rendimiento',
-  'Entrega End-to-End orientada a impacto: definicion de requerimientos, iteracion y mejora continua',
+  'Fundador de consultora tecnológica propia con clientes activos',
+  'Desarrollo end-to-end: diagnóstico, arquitectura, implementación, despliegue y seguimiento',
+  'Automatización de procesos con integración de IA (Claude API, OpenAI)',
+  'Trabajo bajo estándares ISO 9001, ISO 27001 y OWASP Top 10',
+  'Formación continua: Máster Oficial en Ciberseguridad (U-Tad, 2026)',
+  'Experiencia previa en consultoría financiera de alto valor (OVB Allfinanz)',
 ]
 
 export const techCategories = [
@@ -118,8 +118,12 @@ export const techCategories = [
     category: 'Frontend',
     technologies: [
       'React',
+      'Next.js',
+      'TypeScript',
       'Vite',
       'Tailwind CSS',
+      'Framer Motion',
+      'Three.js',
       'HTML',
       'CSS',
       'Bootstrap',
@@ -131,6 +135,7 @@ export const techCategories = [
     technologies: [
       'Node.js',
       'Express',
+      'Supabase',
       'RESTful APIs',
       'JWT Authentication',
       'Stripe Integration',
@@ -138,20 +143,33 @@ export const techCategories = [
     ],
   },
   {
+    category: 'IA & Automatización',
+    technologies: ['Claude API', 'OpenAI API', 'n8n'],
+  },
+  {
     category: 'Databases',
-    technologies: ['MongoDB', 'PostgreSQL', 'MySQL'],
+    technologies: ['PostgreSQL', 'MongoDB', 'MySQL'],
   },
   {
     category: 'Programming Languages',
-    technologies: ['JavaScript', 'Python', 'Java', 'C#', 'Kotlin'],
+    technologies: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'Kotlin'],
   },
   {
     category: 'Mobile',
     technologies: ['Android Studio'],
   },
   {
-    category: 'DevOps & Tools',
-    technologies: ['CI/CD', 'Git', 'Docker (Básico)', 'Render'],
+    category: 'Cloud & DevOps',
+    technologies: [
+      'AWS',
+      'Vercel',
+      'GitHub Actions',
+      'CI/CD',
+      'Git Flow',
+      'Vitest',
+      'Docker (Básico)',
+      'Render',
+    ],
   },
 ]
 
@@ -163,10 +181,22 @@ export const languages = [
 
 export const education = [
   {
-    id: 'edu-dam',
-    title: 'Desarrollador de Apps y Multiplataformas',
-    school: 'CEV escuela superio, Madrid',
-    period: '21/09/2024 - Actualidad',
+    id: 'edu-master-cyber',
+    title: 'Máster en Ciberseguridad',
+    school: 'U-Tad (Centro Universitario de Tecnología y Arte Digital), Madrid',
+    period: '09/2026 - En curso',
+    details: [
+      'Seguridad defensiva y ofensiva',
+      'Análisis forense y respuesta a incidentes',
+      'Criptografía aplicada',
+      'Seguridad en cloud y aplicaciones web (OWASP)',
+    ],
+  },
+  {
+    id: 'edu-grado',
+    title: 'Grado en Desarrollo de Software',
+    school: 'CEV Escuela Superior, Madrid',
+    period: '09/2024 - 06/2026',
     details: [
       'Programación en Java, JavaScript y Python',
       'Bases de datos relacionales y no relacionales (MySQL, PostgreSQL, MongoDB)',
@@ -179,19 +209,19 @@ export const education = [
     id: 'edu-bach',
     title: 'Bachillerato de Ciencias Tecnológicas',
     school: 'IES Jaime Ferran',
-    period: '16/09/2022 - 10/06/2024',
+    period: '09/2022 - 06/2024',
     details: [],
   },
 ]
 
 export const experience = [
   {
-    id: 'exp-freelancer',
-    role: 'Software Developer (Freelance SaaS Projects)',
-    company: 'Proyectos Propios y Clientes',
+    id: 'exp-innovathera',
+    role: 'Fundador & Consultor Tecnológico',
+    company: 'Innovathera Technology',
     period: '10/2025 - Presente',
     details:
-      'He estado ganando experiencia con Freelancer, desarrollando soluciones SaaS, paneles de métricas y sistemas de gestión de datos para clientes. Trabajé de forma colaborativa con un compañero responsable de UI/UX y landings, mejorando dinámicas de equipo: seguimiento diario de avances, organización de tareas, compartición continua de resultados y retrospectivas mensuales para analizar mejoras y errores.',
+      'Consultora tecnológica propia que diagnostica ineficiencias operativas en PYMEs de hostelería y construcción y las resuelve con desarrollo a medida. Proceso asesor-implementador end-to-end: análisis del negocio, arquitectura, desarrollo full-stack, despliegue y seguimiento. Clientes activos: Astra Solutions, C22 Calisthenics, Moa Society y Galaxy Construcciones. Liderazgo técnico y de negocio bajo estándares ISO 9001, ISO 27001 y OWASP Top 10. Gestión de equipo comercial propio y dirección estratégica de más de 10 productos verticales internos (gestión de obras con IA, clínicas, gestorías, marketplaces B2B y CRM internos).',
   },
   {
     id: 'exp-ovb',
@@ -199,16 +229,15 @@ export const experience = [
     company: 'OVB Allfinanz',
     period: '02/2024 - 04/2025',
     details:
-      'Uso de herramientas de empresa para automatizar y optimizar procesos de clientes. Gestión y organización de datos con Excel.',
+      'Asesoramiento financiero integral a particulares y autónomos: análisis patrimonial, ahorro, inversión, protección familiar, jubilación e hipotecas. Diseño de estrategias a medio-largo plazo con metodología consultiva de alto valor. Base sólida en consultoría empresarial: análisis de necesidades, construcción de propuestas personalizadas y gestión de cartera con herramientas internas de optimización operativa.',
   },
   {
     id: 'exp-galaxy',
     role: 'Desarrollador de Software',
     company: 'Galaxy Construcciones y Reformas SL',
-    period: 'Sept. 2022 - Sept. 2024',
+    period: '09/2022 - 09/2024',
     details:
       'Desarrollé soluciones internas para optimizar operaciones en el sector de construcción y reformas. Implementé automatizaciones para reducir trabajo manual y mejorar la toma de decisiones. Creé herramientas de cálculo ROI y sistemas inteligentes de búsqueda de inmuebles integrando APIs externas y filtros basados en IA para detectar oportunidades viables de suelo y reforma.',
   },
 ]
-
 
